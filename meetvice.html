@@ -318,7 +318,7 @@
             </div>
   
             <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <div class="box featured">
+              <div class="box">
                 <h3>Service Iphone</h3>
                 <h4><sup>Rp.</sup>80k-600k<span>garansi 1 bulan</span></h4>
                 <ul>
@@ -389,6 +389,12 @@
   
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
               <form name="meetvice-contact-form">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <strong>Wajib Diisi !</strong> Sampaikan pesan kepada kami.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
                 <div class="row">
                     <div class="form-group col-md-6">
                       <label for="name">Nama kamu</label>
@@ -484,6 +490,7 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
+        form.reset()
     })
   </script>
 
