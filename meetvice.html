@@ -71,7 +71,7 @@
           <h1>Meetvice jasa service laptop dan handphone offline dan online</h1>
           <h2>Harga murah dan merakyat</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Order Sekarang</a>
+            <a class="btn-get-started scrollto" href="meetvice-order.html"target="_blank">Order Sekarang</a>
             <a href="https://www.youtube.com/watch?v=jAeh2iSIUfE" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Tonton Video lagu dari kami</span></a>
           </div>
         </div>
@@ -109,7 +109,6 @@
             <p>
                 Persaingan usaha dibidang jasa sangat kompetitif terutama jasa service elektronik Meetvice merupakan salah satu usaha yang bergerak dibidang jasa perbaikan alat-alat elektronik yang merupakan salah satu alat untuk melengkapi kebutuhan hidup yang dapat mempermudah kita untuk melakukan suatu kegiatan. Hal ini mengakibatkan persaingan semakin berat. Salah satu cara agar perusahaan tersebut dapat bertahan adalah dengan meningkatkan kualitas pelayanan, sehingga menimbulkan kepuasan bagi para pelanggannya. Jika pelanggan merasa puas, mereka akan memberikan informasi kepada kerabat,teman,atau orang orang yang dikenalnya.
             </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
           </div>
         </div>
 
@@ -339,7 +338,7 @@
                   <li><i class="bx bx-check"></i> Install ulang 85k</li>
                   <li><i class="bx bx-check"></i> Penggantian Sparepart 160k</li>
                 </ul>
-                <a href="#inner-page.html" class="buy-btn">order sekarang</a>
+                <a href="meetvice-order.html" class="buy-btn">order sekarang</a>
               </div>
             </div>
   
@@ -413,12 +412,20 @@
                     <label for="name">Kirim pesan</label>
                     <textarea class="form-control" name="pesan" rows="10" required></textarea>
                   </div>
-                  <div class="text-center"><button type="submit">Kirim Pesan</button></div>
+                  <br/>
+                  <div class="text-center d-none"><input type="submit" onclick="javascript:eraseText();"></div>
+                  <script type="text/javascript">
+                    function showDiv(toggle){
+                    document.getElementById(toggle).style.display = 'block';
+                    }
+                    </script>
+                     
+                    <input type="submit" name="answer" onclick="showDiv('toggle')" value="Kirim Pesan"/>
+                     
+                    <div id="toggle" style="display:none">Pesan kamu telah berhasil kami terima</div>
               </form>
             </div>
-  
           </div>
-  
         </div>
       </section><!-- akhir kontak Section -->
 
